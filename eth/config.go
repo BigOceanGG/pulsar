@@ -35,7 +35,7 @@ import (
 var DefaultConfig = Config{
 	SyncMode:      downloader.FastSync,
 	Ethash:        ethash.Config{},
-	NetworkId:     101,
+	NetworkId:     168,
 	LightPeers:    100,
 	DatabaseCache: 768,
 	TrieCache:     256,
