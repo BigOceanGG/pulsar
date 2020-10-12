@@ -312,7 +312,9 @@ func DefaultGenesisBlock() *Genesis {
 		GasLimit:      21000000,
 		GasLimitPivot: 21000000,
 		Difficulty:    big.NewInt(0x20000), //131072
-		Alloc:         decodePrealloc(mainnetAllocData),
+		Alloc: map[common.Address]GenesisAccount{
+			common.BytesToAddress([]byte{0x97, 0xd6, 0xb3, 0xad, 0xfa, 0x31, 0xd5, 0x67, 0x40, 0xc9, 0xdb, 0x3d, 0x62, 0xde, 0xe3, 0xf7, 0xf7, 0x2f, 0x5f, 0x84}): {Balance: big.NewInt(1000000000)},
+		},
 	}
 }
 

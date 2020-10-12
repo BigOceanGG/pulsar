@@ -25,22 +25,20 @@ import (
 
 // Genesis hashes to enforce below configs on.
 var (
-	MainnetGenesisHash = common.HexToHash("0xd758f05ca619ed91ae5d55c5aeb4b587ae8fa898b94593047bcd0ffd9152abe5")
+	MainnetGenesisHash = common.HexToHash("0xe803b9380fbb0bd87cda82cff77e4e8de4a40f871f56ebd8e40b066f3b2eb3ab")
 	TestnetGenesisHash = common.HexToHash("0x8b1bcd4065fc06482201189df6e03872f867a88f7837c7e294649e2e9dafe597")
 )
 
 var (
 	// MainnetChainConfig is the chain parameters to run a node on the main network.
 	MainnetChainConfig = &ChainConfig{
-		ChainID:             big.NewInt(101),
+		ChainID:             big.NewInt(166),
 		HomesteadBlock:      big.NewInt(0),
 		EIP150Block:         big.NewInt(0),
 		EIP150Hash:          common.HexToHash("0x0"),
 		EIP155Block:         big.NewInt(0),
 		EIP158Block:         big.NewInt(0),
 		ByzantiumBlock:      big.NewInt(0),
-		CheckPoint1Block:    big.NewInt(318290),
-		CheckPoint1Hash:     common.HexToHash("0x390a731b7fe5125376a4fec9813b5c70aeed430695c7745112290fe46fbfd9e3"),
 		ConstantinopleBlock: nil,
 		Ethash:              new(EthashConfig),
 	}
